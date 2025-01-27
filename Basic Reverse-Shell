@@ -1,3 +1,4 @@
+#Simulates a dependency confusion attack that initiates a reverse shell connection
 
 {
   "name": "npm package name here",
