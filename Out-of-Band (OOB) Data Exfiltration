@@ -1,4 +1,8 @@
- "name": "package name here",
+#Demonstrates how sensitive files (e.g., /etc/passwd) could be exfiltrated using a curl command during a dependency confusion attack.
+
+{
+
+"name": "package name here",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
